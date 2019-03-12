@@ -5,5 +5,6 @@ export default gql`
     recipes(vegetarian: $vegetarian) {
       id
       title
+      isStarred @client
   }
 }`;
